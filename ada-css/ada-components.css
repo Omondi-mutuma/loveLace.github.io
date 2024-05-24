@@ -1,0 +1,154 @@
+/* Buttons */
+.ada-btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.25em;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .ada-btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+  }
+  
+  .ada-btn-primary:hover,
+  .ada-btn-primary:focus {
+    background-color: rgba(255, 152, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ada-btn-secondary {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+  }
+  
+  .ada-btn-secondary:hover,
+  .ada-btn-secondary:focus {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Cards */
+  .ada-card {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.25em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    padding: 1em;
+  }
+  
+  .ada-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ada-card-header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+  }
+  
+  .ada-card-body {
+    font-size: 1rem;
+    color: var(--text-color);
+  }
+  
+  /* Forms */
+  .ada-input,
+  .ada-textarea {
+    width: 100%;
+    padding: 0.75em;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.25em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .ada-input:focus,
+  .ada-textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(255, 152, 0, 0.1);
+    outline: none;
+  }
+  
+  .ada-label {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5em;
+  }
+  
+  /* Modals */
+  .ada-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .ada-modal-content {
+    background-color: var(--background-color);
+    padding: 1.5em;
+    border-radius: 0.25em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .ada-modal-header,
+  .ada-modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  
+  .ada-modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .ada-modal-footer {
+    margin-top: 1em;
+  }
+  
+  .ada-modal-close {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Utility Classes */
+  .ada-mt-1 {
+    margin-top: 1em;
+  }
+  
+  .ada-mb-1 {
+    margin-bottom: 1em;
+  }
+  
+  .ada-text-center {
+    text-align: center;
+  }
+  
+  .ada-text-right {
+    text-align: right;
+  }
+  
+  .ada-text-left {
+    text-align: left;
+  }
+  

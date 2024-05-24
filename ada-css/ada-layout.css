@@ -1,0 +1,126 @@
+/* Container */
+.ada-container {
+    /* A container with a max width and centered margin */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Grid System */
+  .ada-row {
+    /* A flexbox container for creating rows */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  
+  .ada-col {
+    /* A flexbox item for creating columns */
+    flex: 1;
+    padding: 0 15px;
+  }
+  
+  /* Column Widths */
+  .ada-col-1 { flex: 0 0 8.33%; max-width: 8.33%; }
+  .ada-col-2 { flex: 0 0 16.66%; max-width: 16.66%; }
+  .ada-col-3 { flex: 0 0 25%; max-width: 25%; }
+  .ada-col-4 { flex: 0 0 33.33%; max-width: 33.33%; }
+  .ada-col-5 { flex: 0 0 41.66%; max-width: 41.66%; }
+  .ada-col-6 { flex: 0 0 50%; max-width: 50%; }
+  .ada-col-7 { flex: 0 0 58.33%; max-width: 58.33%; }
+  .ada-col-8 { flex: 0 0 66.66%; max-width: 66.66%; }
+  .ada-col-9 { flex: 0 0 75%; max-width: 75%; }
+  .ada-col-10 { flex: 0 0 83.33%; max-width: 83.33%; }
+  .ada-col-11 { flex: 0 0 91.66%; max-width: 91.66%; }
+  .ada-col-12 { flex: 0 0 100%; max-width: 100%; }
+  
+  /* Gutters */
+  .ada-gutter-sm { margin: 0 -5px; }
+  .ada-gutter-md { margin: 0 -10px; }
+  .ada-gutter-lg { margin: 0 -15px; }
+  
+  .ada-gutter-sm > .ada-col { padding: 0 5px; }
+  .ada-gutter-md > .ada-col { padding: 0 10px; }
+  .ada-gutter-lg > .ada-col { padding: 0 15px; }
+  
+  /* Utility Classes */
+  .ada-align-items-center {
+    /* Align items vertically centered in a flex container */
+    align-items: center;
+  }
+  
+  .ada-justify-content-between {
+    /* Distribute items evenly with space between in a flex container */
+    justify-content: space-between;
+  }
+  
+  .ada-justify-content-center {
+    /* Center items horizontally in a flex container */
+    justify-content: center;
+  }
+  
+  .ada-flex-wrap {
+    /* Enable wrapping of flex items */
+    flex-wrap: wrap;
+  }
+  
+  .ada-flex-nowrap {
+    /* Disable wrapping of flex items */
+    flex-wrap: nowrap;
+  }
+  
+  /* Visibility Classes */
+  .ada-visible {
+    /* Make element visible */
+    visibility: visible;
+  }
+  
+  .ada-invisible {
+    /* Make element invisible but still occupy space */
+    visibility: hidden;
+  }
+  
+  .ada-hidden {
+    /* Hide element completely */
+    display: none;
+  }
+  
+  /* Display Classes */
+  .ada-d-block {
+    /* Set display to block */
+    display: block;
+  }
+  
+  .ada-d-inline-block {
+    /* Set display to inline-block */
+    display: inline-block;
+  }
+  
+  .ada-d-inline {
+    /* Set display to inline */
+    display: inline;
+  }
+  
+  .ada-d-flex {
+    /* Set display to flex */
+    display: flex;
+  }
+  
+  .ada-d-none {
+    /* Set display to none */
+    display: none;
+  }
+  
+  /* Fullscreen Section */
+  .ada-fullscreen-section {
+    /* A section that takes up the full viewport height and width */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  

@@ -1,0 +1,18 @@
+/* Default Theme */
+:root {
+    --primary-color: rgb(255, 152, 0); /* Orange */
+    --secondary-color: rgb(0, 0, 0);   /* Black */
+    --text-color: rgb(0, 0, 0);        /* Black */
+    --background-color: #ffffff;       /* White */
+    --border-color: #e0e0e0;           /* Light Grey */
+  }
+  
+  /* Dark Theme */
+  [data-theme="dark"] {
+    --primary-color: rgb(255, 152, 0); /* Orange */
+    --secondary-color: rgb(255, 255, 255); /* White */
+    --text-color: rgb(255, 255, 255);  /* White */
+    --background-color: #333333;       /* Dark Grey */
+    --border-color: #444444;           /* Darker Grey */
+  }
+  

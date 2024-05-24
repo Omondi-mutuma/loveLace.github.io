@@ -1,0 +1,134 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Typography */
+  body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #000000;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.5em;
+    font-weight: 600;
+  }
+  
+  /* Layout */
+  .ada-container {
+    /* A container with a max width and centered margin */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .ada-row {
+    /* A flexbox container for creating rows */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .ada-col {
+    /* A flexbox item for creating columns */
+    flex: 1;
+    padding: 0 15px;
+  }
+  
+  /* Links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover, a:focus {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Forms */
+  input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+  }
+  
+  input, textarea, select {
+    /* Default styling for form elements */
+    width: 100%;
+    padding: 0.375em 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+  }
+  
+  button {
+    /* Default styling for buttons */
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.25em;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover, button:focus {
+    background-color: #0056b3;
+  }
+  
+  /* Utility Classes */
+  .ada-text-center {
+    /* Utility class for center-aligning text */
+    text-align: center;
+  }
+  
+  .ada-mt-1 {
+    /* Utility class for small top margin */
+    margin-top: 0.25rem;
+  }
+  
+  .ada-mt-2 {
+    /* Utility class for medium top margin */
+    margin-top: 0.5rem;
+  }
+  
+  .ada-mt-3 {
+    /* Utility class for large top margin */
+    margin-top: 1rem;
+  }
+  
+  .ada-d-flex {
+    /* Utility class for applying flex display */
+    display: flex;
+  }
+  
+  .ada-justify-center {
+    /* Utility class for centering flex items horizontally */
+    justify-content: center;
+  }
+  
+  /* Default Box Styles */
+  .ada-box {
+    /* A box with padding, border, and background color for general content wrapping */
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    background-color: #f8f9fa;
+  }
+  
+  /* Images */
+  img {
+    /* Responsive image styling */
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
