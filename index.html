@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="ada-css/ada-layout.css">
     <link rel="stylesheet" href="ada-css/ada-theme.css">
     <!--Ada JavaScript tags-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="ada-js/ada-main.js"></script>
-    <script src="ada-js/ada-utils.js"></script>
-    <script src="ada-js/ada-theme-switcher.js"></script>
+    
 
 </head>
 <body>
@@ -51,6 +51,22 @@
           "foundingDate": "2022-10-24",
           "founder": "Brian Omondi"
         }
-        </script>
+    </script>
+
+    <script>$(document).ready(function() {
+      $('.has-animation').each(function(index) {
+        $(this).delay($(this).data('delay')).queue(function(){
+          $(this).addClass('animate-in');
+        });
+      });
+    });</script>
+
+    
+
+    
+    <script src="ada-js/ada-utils.js"></script>
+    <script src="ada-js/ada-theme-switcher.js"></script>
+    
+    
 </body>
 </html>
