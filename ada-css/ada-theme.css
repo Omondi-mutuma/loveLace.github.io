@@ -21,19 +21,11 @@
   }
 
 
-  .ada-loading_text {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 800;
-    padding: 20px;
-    text-transform: uppercase;
-    color: #fff;
-    display: inline-block;
-    position: relative;
-  }
-  
-  .has-animation{
-    position: relative;
+  .has-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .has-animation p, .has-animation img {
@@ -50,6 +42,28 @@
     height: 100%;
     z-index: 10;
   }
+  .ada-loading_text{
+    color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .ada-loading_text::before{
+    content: 'ada lovelace';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    color: var(--text-color);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid var(--primary-color);
+    animation: type 2s forwards 2s ease;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .has-animation.animate-in p {
       animation: none;
@@ -64,14 +78,14 @@
     background-color: var(--primary-color);
   }
   .has-animation.animate-in:after {
-    background-color: color-mix(in oklab, var(--primary-color) 10%, black);
-    animation-delay: 0.5s;
+    background-color: color-mix(in oklab, var(--primary-color) 60%, rgba(255, 255, 255, 0.068));
+    animation-delay: 0.1s;
   }
   .has-animation.animation-ltr.animate-in:before {
-    animation: revealLTR 1.8s ease;
+    animation: revealLTR 2 ease;
   }
   .has-animation.animation-ltr.animate-in:after {
-    animation: revealLTR 1s 0.6s ease;
+    animation: revealLTR 1s 0.4s ease;
   }
   .has-animation.animation-rtl.animate-in:before {
     animation: revealRTL 1.8s ease;
@@ -117,4 +131,12 @@
     }
   }
   
-  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    
+    100% {
+      width: 100%;
+    }
+  }
